@@ -97,26 +97,23 @@
 
 
 # 9.lcm
-# a=4
-# b=6
-# gcd=1
-# lcm=1
-# if a>b:
-#     i=1
-#     while i<=a:
-#         if a%i==0 and b%i==0:
-#             gcd=i
-#         i=i+1
-# else:
-#     i=1
-#     while i<=b:
-#         if a%i==0 and b%i==0:
-#             gcd=i
-#         i=i+1 
+# a = 4
+# b = 6
 
-# print(gcd)          
-# lcm=a*b//gcd
-# print(lcm)
+# gcd = 1
+
+# # GCD nikalna
+# i = 1
+# while i <= a and i <= b:
+#     if a % i == 0 and b % i == 0:
+#         gcd = i
+#     i += 1
+
+# print("GCD =", gcd)
+
+# # LCM nikalna
+# lcm = (a * b) // gcd
+# print("LCM =", lcm)
 
 
 # 10.Fibonacci:--
@@ -162,21 +159,17 @@
     
     
 # 13.leaf year      
-# n=int(input("enter a year"))
-# i=1
-# while 0<=8n:
-#     if (i%400==0) or (i%4==0 and i%100!=0):
-#         print("leaf year",i)
+
+
+# n = int(input("enter a year"))
+# i = 1
+
+# while i <= n:
+#     if (i % 400 == 0) or (i % 4 == 0 and i % 100 != 0):
+#         print("leap year", i)
 #     else:
-#         print ("not a leaf year",i)
-#     i=i+1    
+#         print("not a leap year", i)
+#     i = i + 1
 
-n = int(input("enter a year"))
-i = 1
 
-while i <= n:
-    if (i % 400 == 0) or (i % 4 == 0 and i % 100 != 0):
-        print("leap year", i)
-    else:
-        print("not a leap year", i)
-    i = i + 1
+# 14.
